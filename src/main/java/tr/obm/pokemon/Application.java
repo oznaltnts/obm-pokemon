@@ -10,6 +10,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import tr.obm.pokemon.service.configuration.DataSourceConfiguration;
+import tr.obm.pokemon.webapp.configuration.FacesInitializer;
 
 @Configuration
 @ComponentScan(basePackages = {"tr.obm"})
