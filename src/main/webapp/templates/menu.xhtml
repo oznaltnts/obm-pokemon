@@ -1,0 +1,51 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" 
+                xmlns:h="http://java.sun.com/jsf/html" 
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets" 
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:fr="http://primefaces.org/freya">
+
+<div class="menu-wrapper">
+    <div class="sidebar-logo">
+        <a href="dashboard.xhtml">
+            <p:graphicImage name="images/logo-freya-single.svg" library="freya-layout" />
+        </a>
+        <a href="#" class="sidebar-pin" title="Toggle Menu">
+            <span class="pin"></span>
+        </a>
+       
+    </div>
+    <div class="layout-menu-container">
+        <h:form id="menuform">
+            <fr:menu widgetVar="FreyaMenuWidget">
+                <p:menuitem id="m_dashboard" value="Dashboard" icon="pi pi-home" outcome="/dashboard" />
+                <p:submenu id="m_hierarchy" label="Hierarchy" icon="pi pi-align-left">
+                    <p:submenu id="m_sm1" label="Submenu 1" icon="pi pi-align-left">
+                        <p:submenu id="m_sm11" label="Submenu 1.1" icon="pi pi-align-left">
+                            <p:menuitem id="m_lnk111" value="Link 1.1.1" icon="pi pi-align-left" url="#" />
+                            <p:menuitem id="m_lnk112" value="Link 1.1.2" icon="pi pi-align-left" url="#" />
+                            <p:menuitem id="m_lnk113" value="Link 1.1.3" icon="pi pi-align-left" url="#" />
+                        </p:submenu>
+                        <p:submenu id="m_sm12" label="Submenu 1.2" icon="pi pi-align-left">
+                            <p:menuitem id="m_lnk121" value="Link 1.2.1" icon="pi pi-align-left" url="#" />
+                        </p:submenu>
+                    </p:submenu>
+                    <p:submenu id="m_sm2" label="Submenu 2" icon="pi pi-align-left">
+                        <p:submenu id="m_sm21" label="Submenu 2.1" icon="pi pi-align-left">
+                            <p:menuitem id="m_lnk211" value="Link 2.1.1" icon="pi pi-align-left" url="#" />
+                            <p:menuitem id="m_lnk212" value="Link 2.1.2" icon="pi pi-align-left" url="#" />
+                        </p:submenu>
+                        <p:submenu id="m_sm22" label="Submenu 2.2" icon="pi pi-align-left">
+                            <p:menuitem id="m_lnk221" value="Link 2.2.1" icon="pi pi-align-left" url="#" />
+                        </p:submenu>
+                    </p:submenu>
+                </p:submenu>
+                <p:submenu id="m_getstarted" label="Start" icon="pi pi-download">
+                    <p:menuitem id="m_buy" value="Buy Now" icon="pi pi-shopping-cart" url="https://www.primefaces.org/store" />
+                </p:submenu>
+            </fr:menu>
+        </h:form>
+    </div>
+</div>
+
+</ui:composition>

@@ -1,0 +1,44 @@
+spring:
+  application.name: obm-pokemon-webapp
+  profiles.active: default
+---
+spring:
+  config.activate.on-profile: default
+  pid.file: ${java.io.tmpdir}/obm-pokemon-webapp.pid
+  datasource:
+    url: jdbc:mysql://localhost:3306/pokemon?characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: atZ5Ix8pxgdvU+mC0AnNYw==
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    poolName: obm-pokemon-webapp-dbconnectionpool
+  jpa:
+    database: MYSQL
+    show-sql: true
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: validate
+  mail:
+    protocol: smtp
+    host: email-smtp.eu-west-1.amazonaws.com
+    port: 465
+    username: AKIAJUVJOQT5PG5BP47Q
+    password: Ao4lLS9s1USSdvgXiXYRujdXeS1/Lv8Sx8i6WjNoVkQV
+    properties.mail.smtp.ssl.enable: true
+    properties.mail.smtp.starttls.enable: true
+    properties.mail.smtp.auth: true
+    properties.mail.transport.protocol: smtps
+    properties.mail.smtps.quitwait: false
+    properties.mail.smtp.ssl.trust: email-smtp.eu-west-1.amazonaws.com
+server:
+  port: 9000
+  servlet.session.cookie.name: POKEMONSESSION
+logging:
+  file:
+    path: C:\home\fdev\logs\
+    name: ${logging.file.path}obm-pokemon-webapp.log
+  config: classpath:logback.xml
+
+mail.from: admin@ebrdwomeninbusiness.com
+init.url: http://localhost:9000
+
+---

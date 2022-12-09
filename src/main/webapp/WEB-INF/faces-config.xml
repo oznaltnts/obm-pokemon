@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<faces-config xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+        http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+              version="2.2">
+
+    <name>primefaces_freya</name>
+
+    <component>
+        <component-type>org.primefaces.component.FreyaMenu</component-type>
+        <component-class>org.primefaces.freya.component.FreyaMenu</component-class>
+    </component>
+
+    <render-kit>
+        <renderer>
+            <component-family>org.primefaces.component</component-family>
+            <renderer-type>org.primefaces.component.FreyaMenuRenderer</renderer-type>
+            <renderer-class>org.primefaces.freya.component.FreyaMenuRenderer</renderer-class>
+        </renderer>
+    </render-kit>
+
+    <application>
+
+        <el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver>
+
+        <locale-config>
+            <default-locale>en</default-locale>
+        </locale-config>
+
+        <message-bundle>
+            messages
+        </message-bundle>
+        <resource-bundle>
+            <base-name>tr.obm.pokemon.webapp.util.CustomResourceBundle</base-name>
+            <var>msg</var>
+        </resource-bundle>
+    </application>
+
+    <factory>
+        <exception-handler-factory>tr.obm.pokemon.webapp.util.CustomExceptionHandlerFactory</exception-handler-factory>
+    </factory>
+
+    <converter>
+        <converter-for-class>java.lang.Enum</converter-for-class>
+        <converter-class>javax.faces.convert.EnumConverter</converter-class>
+    </converter>
+
+</faces-config>
