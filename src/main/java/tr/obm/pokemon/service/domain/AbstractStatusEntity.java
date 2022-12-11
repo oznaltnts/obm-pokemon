@@ -5,8 +5,13 @@ import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import tr.obm.pokemon.service.enumConverter.EnumStatusConverter;
+import tr.obm.pokemon.service.enumtype.EnumStatus;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Convert;
+import javax.persistence.EntityListeners;
+import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
@@ -14,7 +19,7 @@ import java.time.LocalDateTime;
 @EntityListeners(AuditingEntityListener.class)
 @Getter
 @Setter
-public abstract class AbstractEntity implements Serializable {
+public abstract class AbstractStatusEntity implements Serializable {
 
     @Column(name = "idate", nullable = false)
     @CreatedDate
@@ -23,4 +28,8 @@ public abstract class AbstractEntity implements Serializable {
     @Column(name = "udate")
     @LastModifiedDate
     private LocalDateTime updateDate;
+
+    @Convert(converter = EnumStatusConverter.class)
+    @Column(name = "status", nullable = false, columnDefinition = "TINYINT")
+    private EnumStatus status;
 }
