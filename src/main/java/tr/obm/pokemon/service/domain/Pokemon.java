@@ -30,7 +30,6 @@ public class Pokemon extends AbstractEntity {
     @JoinColumn(name = "secondary_type_id", referencedColumnName = "id")
     private Type secondaryType;
 
-
     @Column(name = "attack", nullable = false)
     private Integer attack;
 
@@ -43,7 +42,6 @@ public class Pokemon extends AbstractEntity {
     @Column(name = "generation", nullable = false)
     @Enumerated(EnumType.STRING)
     private Generation generation;
-
 
     @Column(name = "category", nullable = false)
     @Enumerated(EnumType.STRING)
@@ -58,10 +56,12 @@ public class Pokemon extends AbstractEntity {
     @Column(name = "buddy_distance", nullable = false)
     private Double buddyDistance;
 
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinTable(name = "pokemon_fast_move_pvp", joinColumns = @JoinColumn(name = "pokemon_id"), inverseJoinColumns = @JoinColumn(name = "fast_move_id"))
+    private List<FastMovePvp> fastMovePvpList;
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinTable(name = "pokemon_evolution", joinColumns = @JoinColumn(name = "pokemon_id"), inverseJoinColumns = @JoinColumn(name = "evolution_id"))
-    private List<Pokemon> roleList;
-
+    private List<Pokemon> evolutionList;
 
 }
