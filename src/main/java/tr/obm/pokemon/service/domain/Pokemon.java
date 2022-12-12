@@ -19,6 +19,9 @@ public class Pokemon extends AbstractEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "pokedex", nullable = false)
+    private Integer pokedex;
+
     @Column(name = "name", nullable = false)
     private String name;
 
