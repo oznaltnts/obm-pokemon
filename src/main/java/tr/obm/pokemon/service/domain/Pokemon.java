@@ -2,8 +2,7 @@ package tr.obm.pokemon.service.domain;
 
 import lombok.Getter;
 import lombok.Setter;
-import tr.obm.pokemon.service.enumtype.Category;
-import tr.obm.pokemon.service.enumtype.Generation;
+import tr.obm.pokemon.service.enumtype.EnumGeneration;
 
 import javax.persistence.*;
 import java.util.List;
@@ -26,6 +25,10 @@ public class Pokemon extends AbstractEntity {
     private String name;
 
     @ManyToOne
+    @JoinColumn(name = "ref_family_id", referencedColumnName = "id")
+    private Family family;
+
+    @ManyToOne
     @JoinColumn(name = "primary_type_id", referencedColumnName = "id", nullable = false)
     private Type primaryType;
 
@@ -44,11 +47,7 @@ public class Pokemon extends AbstractEntity {
 
     @Column(name = "generation", nullable = false)
     @Enumerated(EnumType.STRING)
-    private Generation generation;
-
-    @Column(name = "category", nullable = false)
-    @Enumerated(EnumType.STRING)
-    private Category category;
+    private EnumGeneration generation;
 
     @Column(name = "charge_move_stardust", nullable = false)
     private Integer chargeMoveStardust;
@@ -56,15 +55,13 @@ public class Pokemon extends AbstractEntity {
     @Column(name = "charge_move_candy", nullable = false)
     private Integer chargeMoveCandy;
 
-    @Column(name = "buddy_distance", nullable = false)
-    private Double buddyDistance;
+    @OneToMany(mappedBy = "moveFast", fetch = FetchType.LAZY)
+    private List<PokemonMoveFast> fastList;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable(name = "pokemon_fast_move_pvp", joinColumns = @JoinColumn(name = "pokemon_id"), inverseJoinColumns = @JoinColumn(name = "fast_move_id"))
-    private List<FastMovePvp> fastMovePvpList;
+    @OneToMany(mappedBy = "moveCharge", fetch = FetchType.LAZY)
+    private List<PokemonMoveCharge> chargeList;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable(name = "pokemon_evolution", joinColumns = @JoinColumn(name = "pokemon_id"), inverseJoinColumns = @JoinColumn(name = "evolution_id"))
-    private List<Pokemon> evolutionList;
+    @OneToMany(mappedBy = "evolution", fetch = FetchType.LAZY)
+    private List<PokemonEvolution> evolutionList;
 
 }

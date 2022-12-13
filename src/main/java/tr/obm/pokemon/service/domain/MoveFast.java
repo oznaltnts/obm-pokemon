@@ -9,8 +9,8 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@Table(name = "ref_fast_move_pvp")
-public class FastMovePvp extends AbstractEntity {
+@Table(name = "ref_move_fast")
+public class MoveFast extends AbstractEntity {
 
     @Id
     @Column(name = "id")
@@ -24,17 +24,17 @@ public class FastMovePvp extends AbstractEntity {
     @JoinColumn(name = "primary_type_id", referencedColumnName = "id", nullable = false)
     private Type primaryType;
 
-    @Column(name = "power", nullable = false)
+    @Column(name = "pvp_power", nullable = false)
     private Integer power;
 
-    @Column(name = "energy", nullable = false)
+    @Column(name = "pvp_energy", nullable = false)
     private Integer energy;
 
-    @Column(name = "turns", nullable = false)
+    @Column(name = "pvp_turns", nullable = false)
     private Integer turns;
 
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable(name = "pokemon_fast_move_pvp", joinColumns = @JoinColumn(name = "fast_move_id"), inverseJoinColumns = @JoinColumn(name = "pokemon_id"))
+    @JoinTable(name = "pokemon_move_fast", joinColumns = @JoinColumn(name = "ref_move_fast_id"), inverseJoinColumns = @JoinColumn(name = "ref_pokemon_id"))
     private List<Pokemon> pokemonList;
 
 }

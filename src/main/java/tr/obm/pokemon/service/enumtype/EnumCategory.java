@@ -1,6 +1,6 @@
 package tr.obm.pokemon.service.enumtype;
 
-public enum Category {
+public enum EnumCategory {
     NON_LEGENDARY,
     LEGENDARY,
     MYTHICAL,

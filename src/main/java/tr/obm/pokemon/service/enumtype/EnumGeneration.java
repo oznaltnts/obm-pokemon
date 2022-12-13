@@ -1,6 +1,6 @@
 package tr.obm.pokemon.service.enumtype;
 
-public enum Generation {
+public enum EnumGeneration {
     GENERATION1,
     GENERATION2,
     GENERATION3,
