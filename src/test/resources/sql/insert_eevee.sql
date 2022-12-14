@@ -403,4 +403,91 @@ INSERT INTO `pokemon_move_charge` (`idate`, `ref_pokemon_id`, `ref_move_charge_i
 INSERT INTO `pokemon_move_charge` (`idate`, `ref_pokemon_id`, `ref_move_charge_id`, `is_elite`) VALUES ('2022-12-31 00:00:00', 9, 32, 0);
 INSERT INTO `pokemon_move_charge` (`idate`, `ref_pokemon_id`, `ref_move_charge_id`, `is_elite`) VALUES ('2022-12-31 00:00:00', 9, 124, 1);
 INSERT INTO `pokemon_move_charge` (`idate`, `ref_pokemon_id`, `ref_move_charge_id`, `is_elite`) VALUES ('2022-12-31 00:00:00', 9, 154, 1);
+-- --------------------------------------------------------
+-- Table structure for table `sys_user`
+--
+INSERT INTO `sys_user` (`idate`, `status`, `username`, `name`, `last_login`, `password`)
+VALUES ('2022-12-31 00:00:00', 1, 'ozanbeymerhaba', 'ozan', '2022-12-31 00:00:00', 'fEqNCco3Yq9h5ZUglD3CZJT4lBs=');
+-- --------------------------------------------------------
+-- Table structure for table `sys_user_preference`
+--
+INSERT INTO `sys_user_preference` (`idate`, `sys_user_id`, `menu_mode`, `dark_mode`, `component_theme`, `topbar_theme`, `menu_theme`, `input_style`, `light_logo`)
+VALUES ('2022-12-31 00:00:00', 1, 'layout-horizontal', 'light', 'purple', 'light', 'light', 'outlined', 0);
+-- --------------------------------------------------------
+-- Table structure for table `sys_user_ref_family`
+--
+INSERT INTO `sys_user_ref_family` (`idate`, `sys_user_id`, `ref_family_id`, `user_candy`)
+VALUES ('2022-12-31 00:00:00', 1, 1, 4887);
+-- --------------------------------------------------------
+-- Table structure for table `sys_user_ref_pokemon`
+--
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 2, 12, 9);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 1, 12, 7);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 0, 13, 14);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 7, 13, 14);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 4, 15, 12);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 1, 14, 9);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 1, 8, 10);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 4, 14, 15);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 0, 10, 13);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 2, 12, 10);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 2, 11, 11);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 0, 9, 13);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 0, 3, 15);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 3, 11, 10);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 2, 15, 8);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 4, 11, 13);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 1, 15, 13);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 1, 10, 7);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 0, 14, 10);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 3, 9, 13);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 1, 14, 11);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 2, 13, 10);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 0, 14, 0);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 2, 14, 7);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 0, 6, 14);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 0, 7, 14);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 15, 15, 15);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 0, 6, 14);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 3, 14, 14);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 3, 12, 15);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 0, 9, 9);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 12, 15, 15);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 0, 8, 15);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 0, 14, 12);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 1, 14, 14);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 0, 13, 11);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 4, 11, 13);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 2, 11, 11);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 0, 9, 6);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 1, 8, 14);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 0, 14, 10);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 1, 13, 15);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 1, 12, 14);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 2, 12, 10);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 6, 13, 14);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 7, 13, 14);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 6, 8, 13);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 1, 2, 12);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 2, 9, 15);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 6, 14, 12);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 5, 13, 12);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 3, 8, 9);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 1, 11, 9);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 7, 6, 15);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 0, 11, 8);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 12, 15, 15);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 15, 15, 15);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 14, 13, 15);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 14, 10, 14);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 13, 3, 9);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 4, 10, 2);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 12, 1, 5);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 13, 12, 15);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 10, 11, 8);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 15, 13, 13);
+INSERT INTO `sys_user_ref_pokemon` (`idate`, `sys_user_ref_family_id`, `weight`, `height`, `iv_attack`, `iv_defense`, `iv_stamina`) VALUES ('2022-12-31 00:00:00', 1, 0, 0, 15, 15, 15);
+
+
+
 
